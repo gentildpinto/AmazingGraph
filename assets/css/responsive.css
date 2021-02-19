@@ -1,0 +1,88 @@
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.7rem;
+    }
+    header nav {
+        display: none;
+    }
+    header div.menu-section nav li a:hover {
+        color: #fff;
+    }
+    .one,
+    .two,
+    .three,
+    .four {
+        background-color: #766F68;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+    header .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    header .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #D2872C;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .menu-section.on nav {
+        display: block;
+    }
+    header .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+    header .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    header .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+    header .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+    header .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+    header .menu-section.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        display: block;
+    }
+    section {
+        align-items: center;
+        flex-direction: column;
+    }
+    section div.image-container {
+        right: 0;
+        width: 75%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    section div.text-container {
+        left: 0;
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    section div.text-container>h1 {
+        font-size: 3.7rem;
+    }
+    section div.text-container>p {
+        font-size: 1.3rem;
+    }
+}

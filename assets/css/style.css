@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 25px;
+    font-family: Roboto;
+    background-color: #FEFEFE;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5%;
+    flex-direction: row;
+    padding: 2% 0px 0px;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #D2872C;
+    font-weight: bold;
+}
+
+header div.menu-section nav li {
+    display: inline;
+    list-style: none;
+}
+
+header div.menu-section nav li a {
+    color: #766F68;
+    font-size: 1.9rem;
+    text-decoration: none;
+    transition: all 250ms linear 0s;
+}
+
+header div.menu-section nav li a:hover {
+    color: #D2872C;
+}
+
+header div.menu-section nav li:nth-child(2),
+header div.menu-section nav li:nth-child(3) {
+    margin-left: 1.5em;
+}
+
+section {
+    display: flex;
+    position: relative;
+}
+
+section div.image-container {
+    top: 30px;
+    right: 10%;
+    width: 55%;
+    position: absolute;
+}
+
+section div.image-container>img {
+    width: 100%;
+}
+
+section div.text-container {
+    left: 10%;
+    width: 45%;
+    position: absolute;
+}
+
+section div.text-container>h1 {
+    color: #766F68;
+    line-height: 1.4;
+    font-weight: bold;
+    font-size: 5.0rem;
+}
+
+section div.text-container>p {
+    color: #766F68;
+    line-height: 1.2;
+    font-size: 2.05rem;
+}
+
+section div.text-container>h1,
+section div.text-container>p {
+    margin: 0 0 0.5em;
+}
+
+section div.text-container>button {
+    width: 350px;
+    height: 75px;
+    border: none;
+    margin-top: 5%;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.9rem;
+    text-align: center;
+    border-radius: 20px;
+    background: #D2872C;
+}
